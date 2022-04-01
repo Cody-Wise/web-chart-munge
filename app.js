@@ -1,8 +1,35 @@
-// import functions and grab DOM elements
+import { purchaseFrequency } from './data-utils.js';
 
-// let state
+const purchases = purchaseFrequency();
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+const labels = 
+    Object.keys(purchases);
+
+
+console.log(labels);
+const data = {
+    labels: labels,
+    datasets: [{
+        label: 'My First dataset',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: Object.values(purchases)
+    }]
+};
+
+const config = {
+    type: 'line',
+    data: data,
+    options: { maintainAspectRatio:true, responsive:true }
+};
+
+// eslint-disable-next-line
+const myChart = new Chart( 
+
+
+    document.getElementById('myChart'),
+    config
+);
+
+

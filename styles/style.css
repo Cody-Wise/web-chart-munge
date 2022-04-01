@@ -33,10 +33,24 @@ body {
 
 main {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+}
+
+#myChart{
+
+    width: 100%;
+
+}
+
+.chart{
+    position: relative; 
+    height:40vh; 
+    width:80vw
+
 }
 
 section {
