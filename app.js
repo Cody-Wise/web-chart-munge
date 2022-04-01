@@ -10,7 +10,7 @@ const labels =
 const data = {
     labels: labels,
     datasets: [{
-        label: 'My First dataset',
+        label: 'Purchase Frequency',
         backgroundColor: 'rgb(255, 99, 132)',
         borderColor: 'rgb(255, 99, 132)',
         data: Object.values(purchases)
