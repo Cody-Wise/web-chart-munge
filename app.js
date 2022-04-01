@@ -7,7 +7,6 @@ const labels =
     Object.keys(purchases);
 
 
-console.log(labels);
 const data = {
     labels: labels,
     datasets: [{
